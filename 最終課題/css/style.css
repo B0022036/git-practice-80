@@ -1,0 +1,173 @@
+@charset "UTF-8";
+
+/* 共通部分 
+------------------------------*/
+html {
+	font-size: 100%;
+}
+
+body{
+	font-family: "ヒラギノ丸ゴ Pro W4", "YU Gothic Mewdium", "游ゴシック Medium", Yugothic, "游ゴシック体", sans-serif;
+	line-height: 1.7;
+	color: #432;
+}
+
+a {
+	text-decoration: none;
+	color: 	#000080;
+}
+
+img {
+	max-width: 100%;
+}
+
+/* header
+------------------------------*/
+#home {
+	background-image: url(../images/tunosimaoohasi.jpg);
+	background-size: cover;
+	height: 160px;
+	margin-bottom: 20px;
+}
+
+.logo {
+	width: 100px;
+	margin-top: 0px;
+}
+
+.main-nav {
+	display: flex;
+	font-size: 1.25rem;
+	text-transform: uppercase;
+	margin-top: 34px;
+	list-style: none;
+}
+
+.main-nav li {
+	font-family: "hannari";
+	margin-left: 36px;
+
+}
+
+.page-header {
+	display: flex;
+	justify-content: space-between;
+}
+
+.wrapper {
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 0 4px;
+}
+
+/* フッター
+------------------------------*/
+footer {
+	background: #432;
+	text-align: center;
+	padding: 16px 0;
+}
+footer p {
+	color: #fff;
+	font-size: 0.875rem;
+}
+
+/* ホーム
+------------------------------*/
+.home-contents {
+	display: flex;
+}
+article {
+	width: 74%;
+	margin-right: 20px;
+}
+article h1 {
+	text-align: center;
+	padding: 10px 0;
+	font-size: 40px;
+	font-family: "Nico Moji";
+
+}
+
+article p {
+	margin-bottom: 1rem;
+	font-family: "ヒラギノ丸ゴ Pro W4";
+}
+
+article img {
+	display: flex;
+	margin-bottom: 20px;
+}
+
+#motonosumi {
+	width: 300px;
+}
+#koi {
+	width: 500px;
+}
+.motonosumi_HOME {
+	display: flex;
+}
+
+.motonosumi_HOME p {
+	font-size: 25px;
+	font-family: "Nico Moji";
+}
+
+aside {
+	width: 36%;
+}
+
+.sub-title {
+	margin-top: 50px;
+	border-bottom: 2px #0bd solid;
+}
+
+/* 観光地
+------------------------------*/
+.kankou-contents {
+	font-family: "Nico Moji";
+	font-size: 25px;
+}
+
+.kankou-contents h1 {
+	text-align: center;
+	font-size: 60px;
+}
+
+.kankou-sub-contents {
+	font-family: "Sawarabi Gothic";
+}
+
+#simonoseki_map {
+	width: 500px;
+}
+
+#karatoitiba {
+	display: flex;
+}
+#karatoitiba img {
+	width: 350px;
+}
+
+.location {
+	display: flex;
+}
+
+.location-info {
+	width: 60%;
+}
+
+.location-info  p {
+	padding: 12px 10px;
+	font-size: 20px;
+}
+
+.location-map {
+	margin-top: 100px;
+	width: 40%;
+}
+/* iframe */
+iframe {
+	width: 100%;
+}
