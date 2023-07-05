@@ -6,6 +6,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.HBox;
+import javafx.scene.layout.Priority;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
@@ -16,6 +17,10 @@ public class HelloNewLayout2 extends Application{
 		Button b2   = new Button("ボタン2");
 		Label lavel = new Label("こんにちは");
 		HBox  hb    = new HBox();
+		HBox.setHgrow(b1, Priority.ALWAYS);
+		b1.setMaxWidth(Double.MAX_VALUE);
+		HBox.setHgrow(b2, Priority.ALWAYS);
+		b2.setMaxWidth(Double.MAX_VALUE);
 		hb.getChildren().add(b1);
 		hb.getChildren().add(b2);
 		hb.setAlignment(Pos.CENTER);

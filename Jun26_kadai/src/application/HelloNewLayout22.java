@@ -6,6 +6,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.HBox;
+import javafx.scene.layout.Priority;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
@@ -16,17 +17,25 @@ public class HelloNewLayout22 extends Application{
 		Button b2   = new Button("ボタン2");
 		Label lavel = new Label("こんにちは");
 		HBox  hb    = new HBox();
+		HBox.setHgrow(b1, Priority.ALWAYS);
+		HBox.setHgrow(b2, Priority.ALWAYS);
+		b1.setMaxSize(Double.MAX_VALUE,Double.MAX_VALUE);
+		b2.setMaxSize(Double.MAX_VALUE,Double.MAX_VALUE);
 		hb.getChildren().add(b1);
 		hb.getChildren().add(b2);
 		hb.setAlignment(Pos.CENTER);
-		hb.setPrefHeight(0);
 		
 		VBox  vb    = new VBox();
+
+
+		HBox.setHgrow(lavel, Priority.ALWAYS);
+		VBox.setVgrow(lavel, Priority.ALWAYS);
+		VBox.setVgrow(hb, Priority.ALWAYS);
+		lavel.setMaxSize(Double.MAX_VALUE,Double.MAX_VALUE);
+		lavel.setAlignment(Pos.CENTER);
 		vb.getChildren().add(lavel);
 		vb.getChildren().add(hb);
-		vb.setAlignment(Pos.CENTER);
-		vb.setPrefHeight(0);
-		
+		vb.setFillWidth(true);
 		
 		Scene scene = new Scene(vb);
 		pstage.setScene(scene);
