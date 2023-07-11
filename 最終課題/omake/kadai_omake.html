@@ -17,31 +17,58 @@
 			<h1><a href="../home/kadai_home.html"><img  class="logo" src="../images/zeni.jpg" alt="山口県紹介"></a></h1>
 			<nav>
 				<ul class="main-nav">
-					<li><a id="kuro" href="../kankou/kadai_kankou.html">観光地</a></li>
-					<li><a id="kuro" href="../ramen/kadai_ramen.html">ラーメン</a></li>
-					<li><a id="kuro" href="kadai_omake.html">おまけ</a></li>
+					<li><a class="kazino_button" href="../kankou/kadai_kankou.html">観光地</a></li>
+					<li><a class="kazino_button" href="../ramen/kadai_ramen.html">ラーメン</a></li>
+					<li><a class="kazino_button" href="kadai_omake.html">おまけ</a></li>
 				</ul>
 			</nav>
 		</header><!-- /header -->
 	</div>
 	<div class="HiandLow">
 		<div class="gamen">
-			<img src="../images/hart1.png" id="toranpu">
+			<div>
+				<p>あなた</p>
+				<img src="../images/hart1.png" id="zibun_toranpu">
+			</div>
 			<div id="hantei">
-				<p>あなたの数字は<span id="you_kazu">1</span>です。</p>
+				<p>あなたの数は<span id="zibun_kazu">1</span>です。</p>
 				<p>場の数は<span id="banokazu">1</span>です。</p>
 				<div id="status">
 					<p>排出金 <span id="haisyutukinn"></span>G</p>
-					<p>所持金<span id="syozikin"></span>G</p>
+					<p>所持金<span id="syozikin">100</span>G</p>
 				</div>
-				<div id="yosou">
-					<a href="#" class="btn_02" id="up">大きい</a>
-					<a href="#" class="btn_02" id="down">小さい</a>
+				<div class="yosou">
+					<button id="up" onclick="game_start_up()">大きい</button>
+					<button id="down" onclick="game_start()">小さい</button>
 				</div>
 			</div>
-			<img src="../images/hart1.png" id="toranpu">
+			<div>
+				<p>場</p>
+				<img src="../images/hart1.png" id="banotoranpu">
+			</div>
 		</div>
-		<div class="rule">
+		<div id="rule">
+			<div id="status_2">
+				<p>掛け金選択</p>
+				<select id="kakekin" name="kakekin">
+					<option value="10" selected>10</option>
+					<option value="20">20</option>
+					<option value="50">50</option>
+					<option value="100">100</option>
+					<option value="200">200</option>
+				</select>
+				<button onclick="kakekin_kettei()">設定</button>
+				<p>現在　　<span id="genzai_kakekin">10</span>G</p>
+			</div>
+			<div id="setumei">
+				<h2>ルール説明</h2>
+				<p>
+				トランプがランダムに１～１３の数字の中で選ばれて表示されます。<br>
+				表示される数字が現在の数字以上か未満かを予想して水色のボタンをクリックしてください。<br>
+				予想が的中すれば掛け金の二倍の額が排出金として追加されます<br>
+				頑張ってお金を増やしてください。
+				</p>
+			</div>
 		</div>
 	</div>
 	<script src=script.js></script>

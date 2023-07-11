@@ -43,6 +43,23 @@ img {
 	list-style: none;
 }
 
+.main-nav a {
+	display: block;
+	text-align: center;
+	vertical-align: middle;
+	text-decoration: none;
+	margin: auto;
+	padding: 1rem 4rem;
+	font-weight: bold;
+	background-image: linear-gradient(to top, #D8D9DB 0%, #fff 80%, #FDFDFD 100%);
+	border-radius: 100vh;
+	color: #333;
+	border: 1px solid #999;
+	text-shadow: 0 1px #fff;
+	box-shadow: 0 3px 2px 1px #fcfcfc, 0 4px 6px #cecfd1, 0 -2px 2px #cecfd1, 0 -4px 2px #eee, inset 0 0 2px 2px #cecfd1;
+	transition: 0.5s;
+}
+
 .main-nav li {
 	font-family: "hannari";
 	margin-left: 36px;
@@ -216,16 +233,33 @@ iframe {
 	margin-bottom: 20px;
 }
 
-#kuro {
-	color: #B6FF01;
+.kazino_button {
+	position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 240px;
+    padding: 10px 25px;
+    color: #313131;
+    transition: 0.3s ease-in-out;
+    font-weight: 600;
+    background: #eee;
+    overflow:hidden;
 }
 
-#toranpu {
+#zibun_toranpu {
+	width: 200px;
+}
+
+#banotoranpu {
 	width: 200px;
 }
 
 .HiandLow {
+
 }
+
 .gamen {
 	display: flex;
 	justify-content: center;
@@ -236,25 +270,29 @@ iframe {
 	text-align: center;
 }
 
-#yosou {
+.yosou {
 	display: flex;
 	padding: 20px;
 }
-a.btn_02 {
+.yosou button {
 	display: block;
 	text-align: center;
 	vertical-align: middle;
 	text-decoration: none;
-	width: 120px;
 	margin: auto;
 	padding: 1rem 4rem;
 	font-weight: bold;
 	border: 2px solid #27acd9;
 	background: #27acd9;
 	color: #fff;
+	border-radius: 100vh;
 	transition: 0.5s;
 }
 
+.yosou button:hover {
+	color: #27acd9;
+	background: #fff;
+}
 #up {
 	margin-left: 5px;
 }
@@ -270,4 +308,26 @@ a.btn_02 {
 
 #status p {
 	margin: 20px;
+}
+
+select {
+	width: 100px;
+	height: 50px;
+}
+
+/* 下側の画面(ルール説明と掛け金選択
+-------------------------------------*/
+#rule {
+	display: flex;
+	justify-content: center;
+	margin: 30px;
+}
+
+#status_2 {
+}
+
+#setumei {
+	padding: 4px;
+	border: 2px solid;
+	margin-left: 40px;
 }
