@@ -1,6 +1,6 @@
 'use strict'
 
-//window.alert('おいでませ山口！！！');
+window.alert('おいでませ山口！！！');
 
 window.onload = function() {
 	const list = ["大吉", "吉", "中吉", "小吉", "末吉", "凶", "大凶"];

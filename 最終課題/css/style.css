@@ -331,3 +331,7 @@ select {
 	border: 2px solid;
 	margin-left: 40px;
 }
+
+#setumei p {
+	font-family: "Nico Moji";
+}
